@@ -58,3 +58,13 @@
 #print(b)
 
 # Напишите скрипт Python, который принимает ввод от пользователя и отображает его обратно в верхнем и нижнем регистре
+a = input()
+b = list(a)
+b.clear()
+for i in range(0, len(a)):
+    if a[i].isupper():
+        b.append(a[i].lower())
+    if a[i].islower():
+        b.append(a[i].upper())
+    a = a[0:i] + str(b[i]) + a[i+1:]
+print(a)
