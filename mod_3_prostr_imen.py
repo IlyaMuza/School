@@ -13,9 +13,9 @@ def string_info(string):  # Функция string_info принимает арг
     return cortege
 
 
-def is_contains(string, spisok):  # Функция is_contains принимает два аргумента: строку и список, и возвращает True,
-    count_calls()                 # если строка находится в этом списке, False - если отсутствует. Регистром строки
-    string = string.lower()       # при проверке пренебречь: UrbaN ~ URBAN
+def is_contains(string, spisok):   # Функция is_contains принимает два аргумента: строку и список, и возвращает True,
+    count_calls()                  # если строка находится в этом списке, False - если отсутствует. Регистром строки
+    string = string.lower()        # при проверке пренебречь: UrbaN ~ URBAN
     for i in range(0, len(spisok)):
         spisok[i] = spisok[i].lower()
     return string in spisok
