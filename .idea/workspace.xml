@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9784b229-7d1b-4469-8548-6c70da3a8604" name="Changes" comment="Module 3">
+      <change afterPath="$PROJECT_DIR$/mod_3_hard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +59,10 @@
   "keyToString": {
     "Python.main.executor": "Run",
     "Python.mod_3_calc.executor": "Run",
+    "Python.mod_3_hard.executor": "Run",
     "Python.mod_3_prostr_imen.executor": "Run",
     "Python.mod_3_raspakovka.executor": "Run",
+    "Python.mod_3_recursia.executor": "Run",
     "Python.mod_3_sposob_vizova_function.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "slave"
@@ -161,11 +164,35 @@
       <option name="project" value="LOCAL" />
       <updated>1725034378644</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Module 3">
+      <option name="closed" value="true" />
+      <created>1725034785780</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725034785780</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Module 3" />
     <option name="LAST_COMMIT_MESSAGE" value="Module 3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mod_3_hard.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mod_3_hard.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
