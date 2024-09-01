@@ -7,18 +7,6 @@ def primer_generate():
     primer = str(a) + ' X ' + str(b) + ' = '
     return a, b, primer
 
-# def get_values():
-#     if str(number1_entry.get())=='':
-#         number1_entry.insert(0,'0')
-#     if number2_entry.get() == '':
-#         number2_entry.insert(0,'0')
-#     num1 = int(number1_entry.get())
-#     num2 = int(number2_entry.get())
-#     return num1, num2
-#
-# def insert_values(res):
-#     answer_entry.delete(0, 'end')
-#     answer_entry.insert(0, res)
 
 def starting():
     global count_primer, a, b, primer, number_prav, lbl1,lbl2,lbl3,lbl4,lbl5,lbl6,lbl7,lbl8,lbl9,lbl10, lbl11
@@ -45,17 +33,6 @@ def starting():
     lbl10.place(x=100, y=235)
     lbl11 = tk.Label(window, text='                                                       ')
     lbl11.place(x=185, y=10)
-    # lbl1.destroy()
-    # lbl2.destroy()
-    # lbl3.destroy()
-    # lbl4.destroy()
-    # lbl5.destroy()
-    # lbl6.destroy()
-    # lbl7.destroy()
-    # lbl8.destroy()
-    # lbl9.destroy()
-    # lbl10.destroy()
-    # lbl11.destroy()
     a, b, primer = primer_generate()
     if count_primer == 1:
         lbl1 = tk.Label(window, text=primer)
@@ -183,38 +160,10 @@ window.geometry("350x350")
 window.resizable(False,False)
 button_add = tk.Button(window, text="Запуск", width=10, height=2, command=starting)
 button_add.place(x=90, y=260)
-# button_add = tk.Button(window, text="Стоп", width=6, height=2, command=sub)
-# button_add.place(x=150, y=260)
 button_add = tk.Button(window, text="Принять", width=10, height=2, command=otvet)
 button_add.place(x=200, y=260)
-# button_add = tk.Button(window, text="/", width=2, height=2, command=delen)
-# button_add.place(x=250, y=200)
-# number1_entry = tk.Entry(window, width=30)
-# number1_entry.place(x=100, y=75)
-# number2_entry = tk.Entry(window, width=28)
-# number2_entry.place(x=100, y=150)
 answer_entry = tk.Entry(window, width=28)
 answer_entry.place(x=100, y=325)
-# number1 = tk.Label(window, text="")
-# number1.place(x=100, y=50)
-# number2 = tk.Label(window, text="")
-# number2.place(x=100, y=75)
-# number3 = tk.Label(window, text="")
-# number3.place(x=100, y=100)
-# number4 = tk.Label(window, text="")
-# number4.place(x=100, y=125)
-# number5 = tk.Label(window, text="")
-# number5.place(x=100, y=150)
-# number6 = tk.Label(window, text="")
-# number6.place(x=100, y=175)
-# number7 = tk.Label(window, text="")
-# number7.place(x=100, y=200)
-# number8 = tk.Label(window, text="")
-# number8.place(x=100, y=225)
-# number9 = tk.Label(window, text="")
-# number9.place(x=100, y=250)
-# number10 = tk.Label(window, text="")
-# number10.place(x=100, y=275)
 answer = tk.Label(window, text="Введите ответ")
 answer.place(x=100, y=300)
 
@@ -224,9 +173,6 @@ a = 1
 b = 1
 primer = 'Пример не сгенерирован'
 res = 0
-# a, b, primer = primer_generate()
-# number1(text=primer)
-
 
 
 window.mainloop()
