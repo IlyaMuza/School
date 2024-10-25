@@ -3,8 +3,8 @@ def is_prime(func):
         result = func(*args)
         for i in range(2, int(result**0.5)+1):
             if result % i == 0:
-                return False
-        return True
+                return 'Составное'
+        return 'Простое'
     return wrapper
 
 
