@@ -1,0 +1,10 @@
+Microsoft .NET Framework incorporates third party material from the projects listed below. 
+1.	Socket Specification 
+2.	IETF RFC 2553: Basic Socket Interface Extensions for IPv6 (https://tools.ietf.org/html/rfc2553)
+3.	IETF RFC 1321: RSA Data Security, Inc. MD5 Message-Digest Algorithm (https://tools.ietf.org/html/rfc1321)
+4.	Apache Qpid (https://qpid.apache.org/index.html)
+5.	jQuery Validation (https://jqueryvalidation.org)
+6.	IETF RFC 3492: Bootstring encoding of Unicode for Internationalized Domain Names in Applications  (https://tools.ietf.org/html/rfc3492)
+7.	The Unicode Consortium (https://unicode.org/)
+8.	LZMA SDK Windows (https://www.7-zip.org/sdk.html)
+9.	Zlib (https://github.com/madler/zlib)
