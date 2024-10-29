@@ -1,4 +1,5 @@
 import threading
+import time
 from random import randrange
 from time import sleep
 
@@ -11,11 +12,11 @@ class Bank:
     def deposit(self):
         for i in range(100):
             rand = randrange(50, 500)
-            self.balance += rand
-            print(f'+{i+1} Пополнение: {rand}. Баланс: {self.balance}')
             if self.balance >= 500 and self.lock.locked():
                 self.lock.release()
-            sleep(0.001)
+            self.balance += rand
+            print(f'+{i+1} Пополнение: {rand}. Баланс: {self.balance}')
+            sleep(0.01)
 
     def take(self):
         for i in range(100):
@@ -23,10 +24,12 @@ class Bank:
             print(f'-{i+1} Запрос на снятие {rand}')
             if rand > self.balance:
                 print(f'-{i + 1} Запрос отклонен, недостаточно средств. Сейчас поток снятия денег заблокирован: {self.lock.locked()}')
+                sleep(0.01)
                 self.lock.acquire()
             else:
                 self.balance -= rand
                 print(f'-{i+1} Снятие: {rand}. Баланс: {self.balance}')
+                sleep(0.01)
 
 
 bank1 = Bank()
