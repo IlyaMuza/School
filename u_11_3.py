@@ -21,11 +21,14 @@ class MyClass:
 def introspection_info(obj):
     result = {}
     result['type'] = type(obj)
-    list_method = [m[0] for m in inspect.getmembers(obj, predicate=inspect.ismethod)]
+    list_method_2 = [m[0] for m in inspect.getmembers(obj, predicate=inspect.ismethod)]
+    list_method = [m[0] for m in inspect.getmembers(obj, predicate=callable)]
     list_attr = [a for a in dir(obj) if a not in list_method]
+
     result['attributes'] = list_attr
     result['methods'] = list_method
     result['module'] = inspect.getmodule(obj)
+#    result['call_not_in_ismethod'] = [a for a in list_method if a not in list_method_2]
     return result
 
 primer = MyClass(5)
